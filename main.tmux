@@ -17,7 +17,7 @@ interpolations=(
 )
 
 interpolation_cmd=(
-    "curl -H 'Accept: application/vnd.github+json' -H 'Authorization: token $GITHUB_TOKEN' https://api.github.com/notifications | jq '[.[]] | length'"
+    "gh api -H "Accept: application/vnd.github+json" /notifications | jq '[.[]] | length'"
 )
 
 set_tmux_option() {
