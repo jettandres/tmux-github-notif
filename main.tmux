@@ -17,7 +17,7 @@ interpolations=(
 )
 
 interpolation_cmd=(
-    "gh api -H "Accept: application/vnd.github+json" /notifications | jq '[.[]] | length'"
+    "gh api -H 'Accept: application/vnd.github+json' /notifications | jq '[.[]] | length'"
 )
 
 set_tmux_option() {
